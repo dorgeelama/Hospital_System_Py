@@ -11,6 +11,37 @@ def input_valid_int(msg, start =0, end = None):
                 return int(inp)
         else:
             return int(inp)
+def filter_patients():
+    if patient.status < 
+
+class Patient:
+    def __init__(self, name, status):
+        self.name = name
+        self.status = status
+
+class HosptialManager:
+    def __init__(self):
+        self.specialization = [0] * 21
+        for i in range(len(self.specialization)):
+            self.specialization[i] = []
+    
+    def add_patient(self, specialization, name, status):
+        print('\nEnter specialization: ')
+        name = input('Enter patient name')
+        status = input('Enter status (0 normal / 1 urgent / 2 super urgent): ')
+        patient = Patient(name, status)
+        if len(self.specialization[specialization]) == 10:
+            print("""\nSorry we can't add more patients for this specialization at the moment.""")
+        else:
+            if patient.status == 0:
+                self.specialization[specialization].append(patient)
+            elif patient.status == 1:
+               print('pass') 
+            else:
+                print('pass')
+
+    
+
 
 class FrontendManager:
     def __init__(self):
